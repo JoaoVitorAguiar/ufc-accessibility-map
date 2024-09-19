@@ -1,3 +1,3 @@
 export * from './galeria';
-export * from './mapa';
+export * from './mapas';
 export * from './videos';

@@ -4,7 +4,7 @@ import { AspectRatio } from "@/components/ui/aspect-ratio";
 const videos = [
   {
     src: "https://www.youtube.com/embed/ZuvHfHrnSPs?rel=0&modestbranding=1",
-    title: "VLT - TOPICS - UFC",
+    title: "VLT - Topiques - UFC",
     description:
       "Rota saindo do VLT, passando pelo ponto das Topics e chegando à UFC",
   },

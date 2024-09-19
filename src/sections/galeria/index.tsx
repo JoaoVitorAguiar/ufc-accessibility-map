@@ -37,12 +37,12 @@ export function Galeria() {
     <section id="galeria" className="bg-teal-50 py-20">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-12 text-center text-teal-800">
-          Galeria de Acessibilidade do Campus
+          Galeria
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {galleryImages.map((image, index) => (
             <Card className="bg-white shadow-lg" key={index}>
-              <CardContent className="pt-12">
+              <CardContent className="pt-6">
                 <AspectRatio ratio={3 / 4}>
                   <Image
                     src={image.src}
@@ -53,7 +53,7 @@ export function Galeria() {
                   />
                 </AspectRatio>
 
-                <p className="text-slate-700 pt-12">{image.description}</p>
+                <p className="text-slate-700 pt-6">{image.description}</p>
               </CardContent>
             </Card>
           ))}

@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Galeria, Videos, Mapa } from "@/sections";
+import { Galeria, Videos, Mapas } from "@/sections";
 import { Menu } from "lucide-react";
 import { useState } from "react";
 
@@ -19,8 +19,8 @@ export default function LandingPage() {
               Mapa de Acessibilidade da UFC Sobral
             </div>
             <div className="hidden md:flex space-x-4">
-              <Link href="#mapa" className="hover:underline">
-                Mapa
+              <Link href="#mapas" className="hover:underline">
+                Mapas
               </Link>
               <Link href="#videos" className="hover:underline">
                 Vídeos
@@ -39,8 +39,8 @@ export default function LandingPage() {
           </nav>
           {isMenuOpen && (
             <div className="mt-4 md:hidden">
-              <Link href="#mapa" className="block py-2 hover:underline">
-                Mapa
+              <Link href="#mapas" className="block py-2 hover:underline">
+                Mapas
               </Link>
               <Link href="#videos" className="block py-2 hover:underline">
                 Vídeos
@@ -76,13 +76,13 @@ export default function LandingPage() {
                 asChild
                 className="bg-orange-500 hover:bg-orange-600 text-white"
               >
-                <Link href="#mapa">Ver Mais</Link>
+                <Link href="#mapas">Ver Mais</Link>
               </Button>
             </div>
           </div>
         </section>
 
-        <Mapa />
+        <Mapas />
 
         <Videos />
 
