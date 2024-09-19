@@ -4,34 +4,31 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const galleryImages = [
   {
-    src: "https://via.placeholder.com/800x600.png?text=Image+1",
-    alt: "Imagem 1",
-    description: "Descrição importante e criativa para a imagem 1.",
+    src: "/images/elevador-para-acessar-o-egundo-andar-do-R.U.jpeg",
+    alt: "Elevador para acessar o segundo andar do R.U",
+    description: "Elevador para acessar o segundo andar do R.U",
   },
   {
-    src: "https://via.placeholder.com/800x600.png?text=Image+2",
-    alt: "Imagem 2",
-    description: "Descrição importante e criativa para a imagem 2.",
+    src: "/images/elevador-para-acesso-ao-segundo-andar-do-bloco-da-engenharia.jpeg",
+    alt: "Elevador para acesso ao segundo andar do bloco da engenharia",
+    description: "Elevador para acesso ao segundo andar do bloco da engenharia",
   },
   {
-    src: "https://via.placeholder.com/800x600.png?text=Image+3",
-    alt: "Imagem 3",
-    description: "Descrição importante e criativa para a imagem 3.",
+    src: "/images/rampa-para-acesso-ao-bloco-da-odontologia.jpeg",
+    alt: "Rampa para acesso ao bloco da odontologia",
+    description: "Rampa para acesso ao bloco da odontologia",
   },
   {
-    src: "https://via.placeholder.com/800x600.png?text=Image+4",
-    alt: "Imagem 4",
-    description: "Descrição importante e criativa para a imagem 4.",
+    src: "/images/vaga-para-pessoas-com-deficiencia-e-rampa-de-acesso-ao-campus.jpeg",
+    alt: "Vaga para pessoas com deficiência e rampa de acesso ao ampus",
+    description:
+      "Vaga para pessoas com deficiência e rampa de acesso ao Campus",
   },
   {
-    src: "https://via.placeholder.com/800x600.png?text=Image+5",
-    alt: "Imagem 5",
-    description: "Descrição importante e criativa para a imagem 5.",
-  },
-  {
-    src: "https://via.placeholder.com/800x600.png?text=Image+6",
-    alt: "Imagem 6",
-    description: "Descrição importante e criativa para a imagem 6.",
+    src: "/images/vaga-para-pessoas-com-deficiencia-e-rampa-para-acessoao-campus.jpeg",
+    alt: "Vaga para pessoas com deficiência e rampa para acesso ao campus",
+    description:
+      "Vaga para pessoas com deficiência e rampa para acesso ao Campus",
   },
 ];
 
@@ -46,7 +43,7 @@ export function Galeria() {
           {galleryImages.map((image, index) => (
             <Card className="bg-white shadow-lg" key={index}>
               <CardContent className="pt-12">
-                <AspectRatio ratio={4 / 3}>
+                <AspectRatio ratio={3 / 4}>
                   <Image
                     src={image.src}
                     alt={image.alt}
@@ -55,9 +52,8 @@ export function Galeria() {
                     className="rounded-lg shadow-md"
                   />
                 </AspectRatio>
-                <p className="text-slate-700 pt-12">
-                  {image.description}
-                </p>
+
+                <p className="text-slate-700 pt-12">{image.description}</p>
               </CardContent>
             </Card>
           ))}
